@@ -141,7 +141,7 @@ setting {
     value = aws_security_group.vprofile-bean-elb-sg.id
   }
 
-
+depends_on = [aws_security_group.vprofile-bean-elb-sg,aws_security_group.vprofile-prod-sg]
 
 
 }
